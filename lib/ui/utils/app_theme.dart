@@ -20,6 +20,14 @@ abstract class AppTheme {
         color: AppColors.black,
       ),
     ),
+    tabBarTheme: TabBarThemeData(
+      labelColor: AppColors.black,
+ dividerColor: AppColors.transparent,
+ indicatorSize: TabBarIndicatorSize.tab,
+ indicatorColor: AppColors.black,
+ dividerHeight: 5
+
+    ),
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontSize: 26,
@@ -65,7 +73,7 @@ abstract class AppTheme {
     ),
   );
 
-  static ThemeData darkTheme =ThemeData(
+  static ThemeData darkTheme = ThemeData(
     scaffoldBackgroundColor: AppColors.black,
     colorScheme: ColorScheme.dark(
       brightness: Brightness.dark,
@@ -81,6 +89,13 @@ abstract class AppTheme {
         fontWeight: .w500,
         color: AppColors.white,
       ),
+    ),
+    tabBarTheme: TabBarThemeData(
+      dividerColor: AppColors.black,
+      labelColor: AppColors.white,
+        dividerHeight: 5,
+        indicatorSize: TabBarIndicatorSize.tab,
+        indicatorColor: AppColors.white,
     ),
     textTheme: TextTheme(
       titleLarge: TextStyle(
